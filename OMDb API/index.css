@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(46, 45, 45);
+}
+header{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, rgb(172, 18, 128), rgb(218, 79, 79));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper input, .wrapper button{
+    outline: none;
+}
+.wrapper input{
+    width: 300px;
+    height: 40px;
+    border: none;
+}
+.wrapper button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
