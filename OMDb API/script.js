@@ -1,6 +1,6 @@
 function search(){
-    const title = document.getElementById('movie-title').value;
-    fetch(`http://www.omdbapi.com/?t=${title}&apikey=dbd7825d`)
+    const inputTitle = document.getElementById('movie-title').value;
+    fetch(`http://www.omdbapi.com/?t=${inputTitle}&apikey=dbd7825d`)
         .then((response) => response.json())
         .then((dados) => {
             console.log(dados);
@@ -12,3 +12,13 @@ function search(){
         });
 }
     
+
+// const createInfo = () => {
+//      const infoTitle
+// }
+
+window.addEventListener('keypress' , (e) => {
+    if(e.which == 13){
+        search();
+    }
+});
