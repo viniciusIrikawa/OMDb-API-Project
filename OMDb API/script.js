@@ -4,19 +4,24 @@ function search(){
         .then((response) => response.json())
         .then((dados) => {
             console.log(dados);
-            console.log('Título: ' + dados.Title);
-            console.log('Gênero: ' + dados.Genre);
-            console.log('Atores: ' + dados.Actors);
-            console.log('Avaliação: ' + dados.imdbRating);
             console.log('Capa do filme: ' + dados.Poster);
+
+            const image = document.getElementById('image');
+            image.setAttribute('src' , dados.Poster);
+            
+            const title = document.getElementById('content-title');
+            title.innerHTML = dados.Title;
+            
+            const year = document.getElementById('content-year');
+            year.innerHTML = dados.Year;
+            
+            const contentDescription = document.getElementById('content-description');
+            contentDescription.innerHTML = dados.Plot;
         });
-}
-    
+    }
 
-// const createInfo = () => {
-//      const infoTitle
-// }
 
+//Key enter listener
 window.addEventListener('keypress' , (e) => {
     if(e.which == 13){
         search();

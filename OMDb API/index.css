@@ -6,6 +6,8 @@
 body{
     background-color: rgb(46, 45, 45);
 }
+
+/* HEADER */
 header{
     width: 100%;
     height: 200px;
@@ -31,4 +33,31 @@ header{
     width: 100px;
     height: 40px;
     cursor: pointer;
+}
+
+/* CONTENT */
+.content-wrapper{
+    width: 50%;
+    margin: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-wrapper #content-info{
+    margin: 20px 0 0 50px;
+    color: #fff;
+}
+.content-wrapper #content-info #content-title{
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+}
+.content-wrapper #content-info #content-year{
+    font-size: 1.5rem;
+    margin: 0 0 8px 0;
+}
+
+.content-wrapper #content-info #content-description{
+    font-size: 1.2rem;
 }

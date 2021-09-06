@@ -11,12 +11,20 @@
     <header>
         <div class="wrapper">
             <h1> OMDb API Project</h1>
-            <input type="text" placeholder="  Movie title " id="movie-title"> 
+            <input type="text" placeholder="  Movie title " id="movie-title" required> 
             <button type="submit" onclick="search()"> Search </button>
         </div>
     </header>
-    
-    <section></section>
+    <section class="content-wrapper">
+        <div id="content-image">
+            <img src="" id="image">
+        </div>
+        <div id="content-info">
+            <h1 id="content-title">  </h1>
+            <p id="content-year"></p>
+            <p id="content-description"></p>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
