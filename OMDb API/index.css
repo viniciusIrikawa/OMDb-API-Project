@@ -64,6 +64,19 @@ header{
     font-size: 1.2rem;
 }
 
+/* FOOTER */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, rgb(172, 18, 128), rgb(218, 79, 79));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* PHONE */
 @media screen and (max-width: 600px){
     header{
