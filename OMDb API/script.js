@@ -4,7 +4,7 @@ function search(){
     .then((response) => response.json()
         .then((dados) => {
             if (dados.Response == "False"){
-                alert('Erro');
+                alert('Movie not found');
             } else {             
                 const image = document.getElementById('image');
                 image.setAttribute('src' , dados.Poster);
